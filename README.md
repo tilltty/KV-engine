@@ -48,29 +48,6 @@ CMake 3.12+
 
 Boost 1.70+
 
-编译与运行
-bash
-
-# 1. 克隆仓库
-
-git clone https://github.com/yourname/KV-Engine.git
-cd KV-Engine
-
-# 2. 构建（Release 模式）
-
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j4
-
-# 3. 启动服务（默认端口 6001）
-
-./kv_server --port 6001 --aof ./data.aof
-支持的命令（Telnet/NC 协议）
-命令格式	说明
-SET <key> <value>	存储键值对（值最大支持 1MB）
-GET <key>	获取键对应的值
-DEL <key>	删除键值对
-PING	健康检查，返回 PONG
 使用示例：
 
 bash
@@ -82,7 +59,7 @@ GET name
 KV-Engine
 DEL name
 +OK
-##性能测试报告（Benchmark）
+## 性能测试报告（Benchmark）
 我们使用 wrk 工具对单节点进行了高并发压测，主要测试 GET 操作性能。
 
 ### 测试环境
