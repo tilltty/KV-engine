@@ -50,15 +50,10 @@ Boost 1.70+
 
 使用示例：
 
-bash
-通过 nc 连接服务
-nc localhost 6001
-SET name KV-Engine
-+OK
-GET name
-KV-Engine
-DEL name
-+OK
+/main.exe 1
+
+(参数1表示当前服务器为node1)
+
 ## 性能测试报告（Benchmark）
 我们使用 wrk 工具对单节点进行了高并发压测，主要测试 GET 操作性能。
 
