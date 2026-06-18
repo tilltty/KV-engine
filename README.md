@@ -76,17 +76,26 @@ OS：Ubuntu 22.04
 
 ### 测试结果
 Running 15s test @ http://192.168.31.64:6001/
+
 4 threads and 200 connections
+
 Thread Stats   Avg   Stdev     Max   +/- Stdev
+
 Latency    23.43ms   63.57ms   1.25s    98.24%
+
 Req/Sec     3.04k    682.34    8.31k    83.39%
+
 Latency Distribution
+
 50%   16.53ms
 75%   19.53ms
 90%   22.14ms
 99%  303.18ms
+
 180255 requests in 15.04s, 6.53MB read
+
 Requests/sec:  11984.48
+
 Transfer/sec:    444.74KB
 
 ### 性能分析
