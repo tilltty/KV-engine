@@ -75,8 +75,6 @@ OS：Ubuntu 22.04
 线程数：4
 
 ### 测试结果
-
-text
 Running 15s test @ http://192.168.31.64:6001/
   4 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
