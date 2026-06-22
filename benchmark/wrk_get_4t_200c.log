@@ -1,0 +1,13 @@
+Running 10s test @ http://192.168.31.64:6001/
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.38ms   25.36ms 552.25ms   98.38%
+    Req/Sec     2.53k   559.52     4.66k    72.93%
+  Latency Distribution
+     50%    9.23ms
+     75%   11.08ms
+     90%   13.90ms
+     99%   88.22ms
+  100419 requests in 10.02s, 3.64MB read
+Requests/sec:  10021.74
+Transfer/sec:    371.90KB
