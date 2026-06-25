@@ -20,7 +20,7 @@ void consistentHash::addNode(const NodeInfo& node){
 
 void consistentHash::removeNode(const NodeInfo& node){
     for(size_t i=0;i<virtual_nodes_;i++){
-        std::string vnode_key = node.id + "#" + std::to_string(i);
+        std::string vnode_key = node.id + "#" + std::to_string(i * 0x9e3779b97f4a7c15ULL);
         uint64_t hash = hash_func_(vnode_key);
         ring_.erase(hash);
     }
