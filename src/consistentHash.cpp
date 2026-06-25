@@ -42,11 +42,3 @@ NodeInfo consistentHash::getNode(const std::string& key){
 size_t consistentHash::size(){
     return ring_.size();
 }
-
-std::string consistentHash::test(){
-    std::string ans;
-    for(int i=0;i<10;i++){
-        ans.append(getNode(std::to_string(i*10000+123)).id);
-    }
-    return ans;
-}
