@@ -23,7 +23,6 @@ public:
     void removeNode(const NodeInfo& node);
     NodeInfo getNode(const std::string& key);
     size_t size();
-    std::string test();
 private:
     size_t virtual_nodes_;
     hashFunc hash_func_;
